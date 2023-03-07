@@ -1,13 +1,25 @@
 package etu2034.framework.servlet;
 
 import java.io.*;
+import java.util.HashMap;
 
+import etu2034.framework.Mapping;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 public class FrontServlet extends HttpServlet {
     private String message;
+
+    HashMap<String, Mapping> mappingUrls;
+
+    public HashMap<String, Mapping> getMappingUrls() {
+        return mappingUrls;
+    }
+
+    public void setMappingUrls(HashMap<String, Mapping> mappingUrls) {
+        this.mappingUrls = mappingUrls;
+    }
 
     public void init() {
         message = "Hello World!";
