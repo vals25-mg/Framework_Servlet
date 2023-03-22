@@ -1,0 +1,33 @@
+Index: src/main/java/etu2034/framework/servlet/FrontServlet.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package etu2034.framework.servlet;\n\nimport java.io.*;\n\nimport jakarta.servlet.ServletException;\nimport jakarta.servlet.http.*;\nimport jakarta.servlet.annotation.*;\n\npublic class FrontServlet extends HttpServlet {\n    private String message;\n\n    public void init() {\n        message = \"Hello World!\";\n    }\n\n    @Override\n    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {\n        processRequest(req, resp);\n    }\n\n    @Override\n    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {\n        processRequest(req, resp);\n    }\n\n    public void processRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {\n        response.setContentType(\"text/html\");\n\n        // Hello\n        PrintWriter out = response.getWriter();\n        out.println(\"<html><body>\");\n        out.println(\"<h1>\" + request.getContextPath() + \"</h1>\");\n        out.println(\"<h1>\" + request.getServletPath() + \"</h1>\");\n//        out.println(\"<p>\" + request.getPathTranslated() + \"</p>\");\n//        out.println(\"<p>\" + request.getPathInfo() + \"</p>\");\n//        out.println(\"<p>\" + request.getServerName() + \"</p>\");\n//        out.println(\"<p>\" + request + \"</p>\");\n        out.println(\"</body></html>\");\n//        Split like codeigniter\n    }\n\n    public void destroy() {\n    }\n}
+===================================================================
+diff --git a/src/main/java/etu2034/framework/servlet/FrontServlet.java b/src/main/java/etu2034/framework/servlet/FrontServlet.java
+--- a/src/main/java/etu2034/framework/servlet/FrontServlet.java	
++++ b/src/main/java/etu2034/framework/servlet/FrontServlet.java	
+@@ -1,13 +1,24 @@
+ package etu2034.framework.servlet;
+ 
+ import java.io.*;
++import java.util.HashMap;
+ 
++import etu2034.framework.Mapping;
+ import jakarta.servlet.ServletException;
+ import jakarta.servlet.http.*;
+ import jakarta.servlet.annotation.*;
+ 
+ public class FrontServlet extends HttpServlet {
+     private String message;
++    HashMap<String, Mapping> MappingUrls;
++
++    public HashMap<String, Mapping> getMappingUrls() {
++        return MappingUrls;
++    }
++
++    public void setMappingUrls(HashMap<String, Mapping> mappingUrls) {
++        MappingUrls = mappingUrls;
++    }
+ 
+     public void init() {
+         message = "Hello World!";
