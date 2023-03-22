@@ -9,7 +9,7 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 public class FrontServlet extends HttpServlet {
-    private String message;
+    HashMap<String, Mapping> MappingUrls;
 
     HashMap<String, Mapping> mappingUrls;
 
@@ -22,7 +22,15 @@ public class FrontServlet extends HttpServlet {
     }
 
     public void init() {
-        message = "Hello World!";
+
+        String objectPackage="etu2034.framework.DataObject";
+        String packageDirectory="/Users/valisoa/IdeaProjects/Framework Servlet/src/main/java/etu2034/framework/DataObject";
+        try {
+            this.MappingUrls=Mapping.getMethodsFromPackage(packageDirectory,objectPackage);
+        }catch (Exception e){
+            System.out.println("Erreur: "+e.getMessage());
+        }
+
     }
 
     @Override
@@ -36,19 +44,23 @@ public class FrontServlet extends HttpServlet {
     }
 
     public void processRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
+       PrintWriter out=response.getWriter();
+       String contextpath=request.getRequestURI().toString();
+       String tobesplited="/Framework Servlet_war_exploded";
 
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + request.getContextPath() + "</h1>");
-        out.println("<h1>" + request.getServletPath() + "</h1>");
-//        out.println("<p>" + request.getPathTranslated() + "</p>");
-//        out.println("<p>" + request.getPathInfo() + "</p>");
-//        out.println("<p>" + request.getServerName() + "</p>");
-//        out.println("<p>" + request + "</p>");
-        out.println("</body></html>");
-//        Split like codeigniter
+//        System.out.println(contextpath.split(tobesplited)[0]);
+        String key=contextpath.split(tobesplited)[1];
+
+
+        if(MappingUrls.containsKey(key)){
+            Mapping map=MappingUrls.get(key);
+
+            out.println(map.getMethods());
+            out.println(map.getClassName());
+        }
+        else{
+            out.println("Non c'ect non");
+        }
     }
 
     public void destroy() {
