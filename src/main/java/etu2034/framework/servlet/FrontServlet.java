@@ -11,6 +11,16 @@ import jakarta.servlet.annotation.*;
 public class FrontServlet extends HttpServlet {
     HashMap<String, Mapping> MappingUrls;
 
+    HashMap<String, Mapping> mappingUrls;
+
+    public HashMap<String, Mapping> getMappingUrls() {
+        return mappingUrls;
+    }
+
+    public void setMappingUrls(HashMap<String, Mapping> mappingUrls) {
+        this.mappingUrls = mappingUrls;
+    }
+
     public void init() {
 
         String objectPackage="etu2034.framework.DataObject";

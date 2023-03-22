@@ -1,5 +1,6 @@
 package etu2034.framework;
 
+
 import etu2034.framework.annotation.MethodAnnotation;
 
 import java.io.File;
@@ -16,6 +17,7 @@ public class Mapping {
         this.methods = methods;
     }
 
+
     public String getClassName() {
         return className;
     }
@@ -23,6 +25,7 @@ public class Mapping {
     public void setClassName(String className) {
         this.className = className;
     }
+
 
     public String getMethods() {
         return methods;
@@ -75,5 +78,6 @@ public class Mapping {
             }
         }
         return mapping;
+
     }
 }
