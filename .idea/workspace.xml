@@ -9,44 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5979917d-f762-4e32-b055-c4a93ba72978" name="Changes" comment="Commit sprint3">
-      <change afterPath="$PROJECT_DIR$/Framework/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/src/main/java/etu2034/framework/DataObject/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/src/main/java/etu2034/framework/Mapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/src/main/java/etu2034/framework/annotation/MethodAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/src/main/java/etu2034/framework/servlet/FrontServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/src/main/java/com/example/test/Andrana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/src/main/java/com/example/test/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/etu2034/framework/DataObject/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/etu2034/framework/Mapping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/etu2034/framework/annotation/MethodAnnotation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/etu2034/framework/servlet/FrontServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="5979917d-f762-4e32-b055-c4a93ba72978" name="Changes" comment="Commit sprint3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="sprint2" />
+        <entry key="$PROJECT_DIR$" value="sprint3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -183,7 +146,7 @@
       <workItem from="1678171425793" duration="894000" />
       <workItem from="1679997316340" duration="2251000" />
       <workItem from="1680180574104" duration="7054000" />
-      <workItem from="1680187919061" duration="1520000" />
+      <workItem from="1680187919061" duration="2137000" />
     </task>
     <task id="LOCAL-00001" summary="Commit sprint2">
       <created>1679482305363</created>
@@ -199,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679487418076</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit sprint3">
+      <created>1680195309120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680195309120</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
